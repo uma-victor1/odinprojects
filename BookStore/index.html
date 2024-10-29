@@ -8,13 +8,32 @@
     <title>Book Store</title>
   </head>
   <body>
+    <dialog id="bookDialog">
+      <h2>Add a Book</h2>
+      <form id="bookForm">
+        <label for="bookName">Name:</label>
+        <input type="text" id="bookName" name="bookName" required />
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+
+        <label for="pageNumbers">Number of Pages:</label>
+        <input type="number" id="pageNumbers" name="pageNumbers" required />
+
+        <label for="read">Read:</label>
+        <input type="checkbox" id="read" name="read" />
+
+        <button type="submit">Add Book</button>
+        <button type="button" id="closeDialogBtn">Cancel</button>
+      </form>
+    </dialog>
     <div class="modal"></div>
     <section>
       <h2 id="title">Book Website</h2>
       <p>Book list</p>
       <div class="container">
         <div class="card">
-          <h3 id="addBook">+</h3>
+          <h3 id="addBook">+ Add a Book</h3>
         </div>
       </div>
     </section>
